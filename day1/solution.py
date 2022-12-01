@@ -1,6 +1,6 @@
 from itertools import groupby
 
-input_list = 'input2'
+input_list = 'input'
 
 with open(input_list) as f:
     lines = [line.rstrip('\n') for line in f]
@@ -20,7 +20,7 @@ sum_list = list(map(sum, new_list))
 highest = max(sum_list) 
 print("part 1 " + str(highest))
 
-#######
+########
 # part 2
 sum_list.sort(reverse=True)
 top_three = sum_list[0:3]
